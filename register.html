@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Jost"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lexend+Deca"
+    />
+  </head>
+
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="videos/videobg2.mp4" type="video/mp4" />
+    </video>
+    <div class="navcontainer">
+      <nav class="nav" id="nav">
+        <a href="index.html"
+          ><img id="logo" src="images/logo.png" class="logo"
+        /></a>
+      </nav>
+    </div>
+    <div class="container">
+      <form id="registerForm" action="caller.php" method="post">
+        <h2 class="h2Signup" style="text-align: center">Sign Up</h2>
+        <input
+          class="input-field"
+          type="text"
+          name="username"
+          placeholder="Username (max 16 characters)"
+          maxlength="16"
+        />
+        <input
+          class="input-field"
+          type="text"
+          name="email"
+          placeholder="E-mail e.g email@email.com"
+        />
+
+        <div class="password-container">
+          <input
+            class="password"
+            id="password"
+            type="password"
+            name="password"
+            placeholder="Password"
+          />
+          <span
+            id="eye"
+            title="Toggle Password Visibility"
+            onclick="togglePasswordVisibility()"
+            >&#128065;</span
+          >
+        </div>
+
+        <input
+          class="password"
+          id="confirmPassword"
+          type="password"
+          name="confirmPassword"
+          placeholder="Confirm password"
+        />
+        <p id="message"></p>
+        <input type="hidden" name="next_page" value="login.html" />
+        <button class="registerBtn" type="button" onclick="passwordMatching()">
+          Register
+        </button>
+
+        <!-- Social sign-in options below the Enter button -->
+        <div class="signinlblContainer">
+          <label class="signinLbl"
+            >Already have an account?
+            <a href="login.html">
+              <span style="color: #ff005c">Sign in here</span></a
+            ></label
+          >
+        </div>
+      </form>
+    </div>
+    <script>
+      function togglePasswordVisibility() {
+        let password = document.getElementById("password");
+        let password2 = document.getElementById("confirmPassword");
+
+        if (password.type === "password") {
+          password.type = "text";
+          password2.type = "text";
+        } else {
+          password.type = "password";
+          password2.type = "password";
+        }
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

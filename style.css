@@ -1,0 +1,749 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Lexend Deca";
+	text-decoration: none;
+	color: white;
+}
+
+body{
+	background-color: black;
+}
+.container {
+	text-align: center;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100px;
+	padding-left: 1em;
+	padding-right: 1em;
+	font-family: "Lexend Deca";
+	font-style: italic;
+}
+.nav {
+    opacity: 0; 
+}
+#nav {
+    opacity: 1; 
+}
+
+.logo {
+	width: 140px;
+}
+
+nav ul li {
+	display: inline;
+	list-style: none;
+	margin: 10px 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative; 
+}
+
+nav ul li a::before {
+	content: ''; 
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	transform: scaleX(0); 
+	transition: transform 0.3s ease; 
+}
+
+nav ul li a:hover::before {
+	transform: scaleX(1); 
+}
+
+.header-text h1 {
+	font-size: 130px;
+	margin-top: 50px;
+	color: #fff;
+	font-family: "Lexend Deca";
+	font-style: italic;
+	font-weight: 900;
+	font-size: 220px;
+}
+.header-text h2{
+	color: #ff005c;
+	font-family: "Lexend Deca";
+	font-style: italic;
+	font-size: 60px;
+	text-align: left;
+	padding-left: 15%;
+}
+.header-text p{
+	font-size: 20px;
+	margin-top: 20px;
+	color: #cccccc;
+	font-family: "Lexend Deca";
+	text-align: left;
+	width: 10	00px;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+#logo {
+	height: 100px;
+	width: auto;
+  }
+.profileAvatar {
+	text-align: center;
+	margin-top: 5px;
+}
+.avatarContainer {
+	height: 250px;
+	width: auto;
+}
+.avatarContainer img {
+	border-radius: 50%;
+	max-height: 250px;
+	width: 250px;
+	min-height: 250px;
+}
+.profileUsername {
+	margin-top: 20px;
+	text-align: center;
+	height: 100px;
+	width: auto;
+	color: white;
+	font-size: 30px;
+	font-weight: 900;
+}
+.profileAboutme {
+	color: white;
+	width: 1000px;
+	height: auto;
+	text-align: center;
+	margin: auto;
+	font-style: normal;
+}
+
+.homepage {
+	background-color: black;
+	font-family: "Lexend Deca";
+	font-style: italic;
+}
+.homepageh1 {
+	font-weight: 1000;
+	font-size: 100px;
+}
+
+.homepageDesc p {
+	color: white;
+	margin-top: 15px;
+	text-align: center;
+	font-size: large;
+}
+.showcaseh1{
+	font-size: 30px;
+	text-align: center;
+	padding: 50px;
+}
+.showcase{
+	margin-top: 1px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+.showcase img{
+ padding: 20px;
+}
+.homepageBody {
+	background-color: white;
+	width: auto;
+	margin-top: 20px;
+}
+i {
+	color: white;
+	font-size: 40px;
+	float: right;
+	display: none;
+	cursor: pointer;
+}
+.navMenu {
+	display: none;
+}
+.closeOption{
+	display: none;
+}
+#signuplbl{
+	background-color: #ff005c;
+	color: white;
+	font-family: "Lexend Deca";
+	font-size: 70px;
+	text-align: center;
+	padding: 30px;
+	font-weight: 900;
+	cursor: pointer;
+	border-radius: 5%;
+}
+#signuplbl:hover{
+	background-color: #1d000b;
+	color: #ff005c;
+	transition: .4s;
+	border: #ff005c solid 1px;
+}
+.signupContainer{
+	margin-top: 65px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+#myVideo {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+	filter: opacity(30%);
+	background-size: cover;
+}
+.bannerContainer{
+	background-color: brown;
+	height: 215px;
+	width: auto;
+	background-image: url(images/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+.bannerContainerkof{
+	background-color: brown;
+	height: 215px;
+	width: auto;
+	background-image: url(images/KOFXV_Keyart.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+.koflogo{
+	height: 200px;
+	width: auto;
+}
+.bannerContainerggs{
+	background-color: brown;
+	height: 215px;
+	width: auto;
+	background-image: url(images/bannerggs.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+	
+.bannerContainersf6{
+	background-color: brown;
+	height: 215px;
+	width: auto;
+	background-image: url(images/ui01_thiumb.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+.bannerContainersf3{
+	background-color: brown;
+	height: 240px;
+	width: auto;
+	background-image: url(images/sfiiibg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+.pGames{
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 20px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.miniTitle{
+	padding-left: 20px;
+	color: #ff005c;
+	font-size: 50px;
+}
+.webLinksContainer {
+	margin-top: 3%;
+}
+.comLinksContainer {
+	margin-top: 3%;
+
+}
+.comLinksContainer img {
+	margin-top: 2%;
+	padding: 5px;
+	margin-left:2%;
+	transition: filter 0.3s ease; 
+
+}
+.comLinksContainer img:hover {
+	filter: brightness(75%);
+
+}
+.webLinksList ul {
+	list-style: none; 
+	padding: 0; 
+}
+.webLinksList li {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.comLinksList ul {
+	list-style: none; 
+	padding: 0; 
+}
+.comLinksList li {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.editUsername {
+	position: relative;
+	display: inline-block;
+}
+
+.input-field {
+	padding: 5px;
+}
+
+.fa-pen-to-square {
+	cursor: pointer;
+}
+#userAvatar {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+}
+.dropdown {
+	margin-right: 5%;
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-btn {
+	padding: 10px;
+	cursor: pointer;
+}
+
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+
+.dropdown-content a {
+	padding: 12px 16px;
+	display: block;
+	text-decoration: none;
+	color: #333;
+}
+
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+	animation: moveAnimation 4s linear infinite;
+}
+
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.enlarge {
+	transition: transform 0.3s ease-in-out;
+}
+
+.enlarge:hover {
+	transform: scale(1.1);
+}
+.signinlblContainer{
+	position: relative;
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 10px;
+}
+.fadeIn {
+	animation: fadeIn 1s ease-in-out forwards; 
+}
+.fadeInMove {
+    opacity: 0;
+    transform: translateX(100px);
+}
+#pfusnm {
+    animation: fadeInMove 1s ease-in-out forwards; 
+}
+.changeAvatarBtn{
+	position: absolute;
+	margin-left: -250px;
+	opacity: 0;
+	height: 250px;
+	width: 250px;
+	
+}
+.changeAvatarBtn:hover{
+	position: absolute;
+	margin-left: -250px;
+	border-radius: 50%;
+	background-color: #000000;
+	opacity: 0.4;
+	height: 250px;
+	width: 250px;
+	transition: opacity 0.3s ease;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.commentTitle{
+	text-align: center;
+	background-color: #ff005c;
+	margin-top: 20px;
+}
+.commenttext{
+	color: #ffffff;
+	padding: 5px;
+	font-size: 30px;
+}
+.commentsContainer{
+	text-align: center;
+	background-color: #ffffff;
+	color: #000000;
+}
+.commentBox{
+	margin-top: 15px;
+	width: 70%;
+	resize: none;
+	padding: 20px;
+	height: 120px;
+}
+.commentBtn{
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    font-size: 20px;
+	padding: 5px;
+	margin-top: 10px;
+}
+.commentBtn:hover{
+	color: #ff005c;
+	transition: .4s;
+}
+.CommentSection{
+	margin: auto;
+	margin-top: 10px;
+	width: 50%;
+	background-color: #333;
+	border: #ff005c solid 1px;
+	color: #ffffff;
+}
+.comment {
+	color: #ff005c;
+  }
+  
+  .username {
+	color: #ff005c;
+  }
+  
+  .date {
+	color: #ff005c;
+  }
+  
+  .comment-text {
+	color: #ff005c;
+  }
+/*------------PUT MEDIA QUERIES HERE------------*/
+
+@media only screen and (max-width: 1500px){
+	.header-text h1{
+		font-size: 200px;
+	}
+	.header-text h2{
+		padding-left: 10%;	
+	}
+}
+
+@media only screen and (max-width: 1400px){
+	.header-text h1{
+		font-size: 160px;
+	}
+	.header-text h2{
+		padding-left: 12%;	
+		font-size: 50px;	
+	}
+	.pGames{
+		font-size: 25px;
+	}
+}
+@media only screen and (max-width: 1300px){
+	.header-text h1{
+		font-size: 160px;
+	}
+	
+}
+@media only screen and (max-width: 1050px){
+	.header-text h1{
+		font-size: 120px;
+	}
+	.header-text h2{
+		font-size: 40px;
+		padding-left: 0%;
+		text-align: center;
+	}
+	.header-text p{
+		font-size: medium;
+	}
+	.miniTitle{
+		font-size: 30px;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.nav {
+		height: auto;
+	}
+	.show{
+		margin-top: 245px;
+	}
+	.nav ul {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		background-color: #ff005c;
+		z-index: 1;
+	}
+	.comLinksList img{
+		width: 60px;
+	}
+
+	.nav ul.show {
+		display: flex;
+	}
+
+	.nav li {
+		text-align: center;
+		margin: 10px 0;
+	}
+
+	.navMenu{
+		display: block;
+	}
+	.closeOption{
+		display: block;
+	}
+	.dropdown {
+		display: none;
+	}
+}
+@media only screen and (max-width: 790px){
+	.header-text h1{
+		font-size: 100px;
+	}
+	#tk8logo{
+		height: 110px;
+		width: auto;
+	}
+	#sf3logo{
+		
+		height: 110px;
+		width: auto;
+	}
+	#ggslogo{
+		height: 140px;
+		width: auto;
+	}
+	.bannerContainer{
+		height: 130px;
+	}
+	.pGames{
+		font-size: 20px;
+	}
+	
+}
+@media only screen and (max-width: 670px){
+	.homepageh1{
+		font-size: 60px;
+	}
+	.header-text h1{
+		font-size: 80px;
+	}
+	.header-text p{
+		font-size: small;
+	}
+	.showcaseh1{
+		font-size: 15px;
+		padding: 10px;
+	}
+	.homepageDesc p {
+		font-size: 10px;
+	}
+	.profileUsername {
+		height: 70px;
+	}
+}
+@media only screen and (max-width: 500px){
+	.header-text h1{
+		font-size: 47px;
+	}
+	.header-text h2{
+		font-size: 25px;
+		font-weight: 100;
+	}
+	#tk8logo{
+		height: 85px;
+		width: auto;
+	}
+	.bannerContainer{
+		height: 100px;
+	}
+	.container{
+		width: 310px;
+	}
+	form{
+		width: 270px;
+		height: auto;
+	}
+	#signuplbl{
+		font-size: 30px;
+	}
+	.koflogo{
+		height: 130px;
+	}
+	#ggslogo{
+		height: 88px;
+	}
+	.bannerContainerkof{
+		height: 170px;
+	}
+	.bannerContainerggs{
+		height: 130px;
+	}
+	
+	.pGames{
+		font-size: 13px;
+	}
+	.miniTitle{
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 405px){
+	.homepageh1{
+		font-size: 45px;
+	}
+	.profileUsername{
+		height: 60px;
+	}
+	.header-text p{
+		font-size: smaller;
+	}
+	.homepageDesc p {
+		font-size: 8px;
+	}
+	.profileUsername {
+		height: 40px;
+	}
+	.showcase img{
+		margin-top: 20px;
+		padding: 0%;
+		width:247px;
+		height: auto;
+	}
+}
+
+
+
+@keyframes fadeIn {
+	from {
+		opacity: 0; 
+	}
+	to {
+		opacity: 1; 
+	}
+}
+
+@keyframes moveAnimation {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: calc(100% - 50px); 
+	}
+}
+
+
+
+/*---------------------Game page GVFRVR------------------*/
+.bannergbContainer{
+	margin: auto;
+	height: 300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	background-image: url(images/grandblue.jpg);
+}
+
+@media screen and (max-width: 1050px){
+	#grandbluelogo{
+		height: 200px;
+	}
+}
+@media screen  and (max-width: 800px){
+	#grandbluelogo{
+		height: 100px;
+	}
+}
+@media screen  and (max-width: 700px){
+	.bannergbContainer{
+		height: 120px;
+	}
+}
+@media screen  and (max-width: 325px){
+	#grandbluelogo{
+		height: 50px;
+	}
+}
+/*---------------------Game page UNIB------------------*/
+.bannerUnibContainer{
+	margin: auto;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	background-image: url(images/undernight\ cover\ pic.jpg);
+}
+@media screen and (max-width: 860px){
+	.bannerUnibContainer{
+		height: 300px;
+	}
+}
+@media screen and (max-width: 530px){
+	.bannerUnibContainer{
+		height: 200px;
+	}
+}
+@media screen and (max-width: 345px){
+	.bannerUnibContainer{
+		height: 100px;
+	}
+}
+
+@keyframes fadeInMove {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
