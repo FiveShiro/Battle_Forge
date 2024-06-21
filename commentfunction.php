@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
 // Tekken8
 if (!function_exists('handleSetCommentsTekken8')) {
     function handleSetCommentsTekken8($conn)

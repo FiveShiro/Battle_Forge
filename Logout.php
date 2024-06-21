@@ -5,7 +5,7 @@
 }
     window.onload = logout;
 </script>
-<<!DOCTYPE html>
+<!DOCTYPE html>
     <html>
 
     <head>

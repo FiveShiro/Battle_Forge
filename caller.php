@@ -5,7 +5,7 @@ include 'register.php';
 include 'login.php';
 include 'commentfunction.php';
 include 'logout.php';
-include 'avatar.php';
+//include 'avatar.php';
 
 // Establish database connection
 $dbConnection = DatabaseConnection::getInstance();
@@ -33,8 +33,8 @@ $pageActions = [
 ];
 
 // Handle GET requests
-if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['next_page'])) {
-    $nextPage = $_GET['next_page'];
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['next_page'])) {
+    $nextPage = $_POST['next_page'];
     if (isset($pageActions[$nextPage])) {
         $action = $pageActions[$nextPage];
         $action($conn);

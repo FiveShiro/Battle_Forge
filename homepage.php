@@ -46,7 +46,7 @@ session_start();
           <i class="fa-solid fa-bars"></i>
         </div>
       </nav>
-    </div>>
+    </div>
     </div>
   <!--to here-->
   <div class="profileAvatar">
