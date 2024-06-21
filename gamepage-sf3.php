@@ -64,7 +64,7 @@ $usernames = isset($_SESSION['sessionUsernames']) ? $_SESSION['sessionUsernames'
   <!--Image banners-->
   <div class="bannerContainersf3">
     <div class="bannerWrapper">
-      <img id="sf3logo" src="images/3rdsf-logo.webp" alt="" width="450" style="margin-top: -2%" />
+      <img id="sf3logo" src="images/3rdsf-logo.png" alt="" width="450" style="margin-top: -2%" />
     </div>
   </div>
   <!--Game's original description, copy paste them from steam-->
@@ -95,7 +95,7 @@ $usernames = isset($_SESSION['sessionUsernames']) ? $_SESSION['sessionUsernames'
     <label class="miniTitle">Connect with the Community</label>
     <div class="comLinksList">
       <ul>
-        <a href="https://www.reddit.com/r/sf3/" target="_blank"><img src="images/reddit-icon.webp" alt=""
+        <a href="https://www.reddit.com/r/sf3/" target="_blank"><img src="images/reddit-icon.png" alt=""
             width="80" /></a>
         <a href="https://steamcommunity.com/app/586200" target="_blank"><img src="images/steam-icon.png" alt=""
             width="80" /></a>
@@ -104,35 +104,7 @@ $usernames = isset($_SESSION['sessionUsernames']) ? $_SESSION['sessionUsernames'
       </ul>
     </div>
   </div>
-  <!--comment-->
-  <div class="commentTitle">
-      <label class="miniTitle commenttext">Write down a comment</label>
-    </div>
-    <div class="commentsContainer">
-  <?php
-  echo "<form method='post' action='caller.php'>
-    <input type='hidden' name='date' value='" . date('Y-m-d H:i:s') . "'>
-    <textarea class='commentBox' name='comment'></textarea><br>
-    <input type='hidden' name='next_page' value='gamepage-sf3.php'>
-    <button class='commentBtn' type='submit' name='submitCommentsf3'>Comment</button>
-</form>";
-  ?>
-  <form id="commentsf3" method='post' action='caller.php'>
-    <input type='hidden' name='next_page' value='sf3'>
-    <button class="commentBtn" type="button" onclick="showCommentssf3()">Show Comments</button>
-  </form>
-  <?php
-  echo "<div class='CommentSection'>";
-  $array_length = count($usernames);
-
-  for ($index = $array_length - 1; $index >= 0; $index--) {
-    echo $usernames[$index] . "<br>";
-    echo $dates[$index] . "<br>";
-    echo $comments[$index] . "<br><br>";
-  }
-  echo "</div>";
-  ?>
-  </div>
+  
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/790cbfd452.js" crossorigin="anonymous"></script>
 </body>

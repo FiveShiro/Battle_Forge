@@ -64,13 +64,12 @@ $usernames = isset($_SESSION['sessionUsernames']) ? $_SESSION['sessionUsernames'
   <!--Image banners-->
   <div class="bannerContainerggs">
     <div class="bannerWrapper">
-      <img id="tk8logo" src="images/GGStrive_Logo.webp" alt="" />
+      <img id="tk8logo" src="images/GGStrive_Logo.png" alt="" />
     </div>
   </div>
   <!--Game's original description, copy paste them from steam-->
   <p class="pGames">
-    Get ready for the next chapter in the legendary fighting game franchise,
-    TEKKEN 8.
+    JOIN THE CRUSADE OF THE HOLY KNIGHTS AGAINST THE GEARS, FOR HUMANITY! 
   </p>
   <!--Useful web links-->
   <div class="webLinksContainer">
@@ -101,35 +100,7 @@ $usernames = isset($_SESSION['sessionUsernames']) ? $_SESSION['sessionUsernames'
       </ul>
     </div>
   </div>
-  <!--comment-->
-  <div class="commentTitle">
-      <label class="miniTitle commenttext">Write down a comment</label>
-    </div>
-    <div class="commentsContainer">
-  <?php
-  echo "<form method='post' action='caller.php'>
-    <input type='hidden' name='date' value='" . date('Y-m-d H:i:s') . "'>
-    <textarea class='commentBox' name='comment'></textarea><br>
-    <input type='hidden' name='next_page' value='gamepage-ggs.php'>
-    <button class='commentBtn' type='submit' name='submitCommentggs'>Comment</button>
-</form>";
-  ?>
-  <form id="commentggs" method='post' action='caller.php'>
-    <input type='hidden' name='next_page' value='ggs'>
-    <button class="commentBtn" type="button" onclick="showCommentsggs()">Show Comments</button>
-  </form>
-  <?php
-  echo "<div class='CommentSection'>";
-  $array_length = count($usernames);
-
-  for ($index = $array_length - 1; $index >= 0; $index--) {
-    echo $usernames[$index] . "<br>";
-    echo $dates[$index] . "<br>";
-    echo $comments[$index] . "<br><br>";
-  }
-  echo "</div>";
-  ?>
-  </div>
+ 
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/790cbfd452.js" crossorigin="anonymous"></script>
 </body>

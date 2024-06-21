@@ -83,10 +83,10 @@ session_start();
           </h1>
 
           <div class="showcase">
-            <a href="gamepage-tk8.html"
+            <a href="gamepage-tk8.php"
               ><img class="enlarge" src="images/TEKKEN.jpeg" alt="" width="350"
             /></a>
-            <a href="gamepage-sf6.html"
+            <a href="gamepage-sf6.php"
               ><img
                 class="enlarge"
                 src="images/streetfighter.jpeg"
@@ -94,7 +94,7 @@ session_start();
                 width="350"
                 height="450"
             /></a>
-            <a href="gamepage-sf3.html"
+            <a href="gamepage-sf3.php"
               ><img
                 class="enlarge"
                 src="images/3rdstrike.jpg"
@@ -102,23 +102,23 @@ session_start();
                 width="350"
                 height="400px"
             /></a>
-            <a href="#"
+            <a href="gamepage-GBFRVR.php"
               ><img
                 class="enlarge"
-                src="images/gbfvr.avif"
+                src="images/gbfvr.jpg"
                 alt=""
                 width="350"
                 height="450"
             /></a>
-            <a href="#"
+            <a href="gamepage-kof.php"
               ><img
                 class="enlarge"
-                src="images/kof.webp"
+                src="images/kof.jpg"
                 alt=""
                 width="350"
                 height="450"
             /></a>
-            <a href="#"
+            <a href="gamepage-ggs.php"
               ><img class="enlarge" src="images/guilty.jpg" alt="" width="335"
             /></a>
             <a href="#"

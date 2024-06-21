@@ -69,8 +69,7 @@ $usernames = isset($_SESSION['sessionUsernames']) ? $_SESSION['sessionUsernames'
   </div>
   <!--Game's original description, copy paste them from steam-->
   <p class="pGames">
-    Get ready for the next chapter in the legendary fighting game franchise,
-    Under Night In-Birth.
+    FIGHT YOUR WAY THROUGH THE DANGERS OF THE HOLLOW NIGHT
   </p>
   <!--Useful web links-->
   <div class="webLinksContainer">
@@ -79,10 +78,9 @@ $usernames = isset($_SESSION['sessionUsernames']) ? $_SESSION['sessionUsernames'
       <ul>
         <!--the more the merrier-->
         <li>
-          <a href="https://store.steampowered.com/app/801630/UNDER_NIGHT_INBIRTH_ExeLateclr/">GrandBlueFantasyZone</a>
+          <a href="https://store.steampowered.com/app/801630/UNDER_NIGHT_INBIRTH_ExeLateclr/">UnderNight | steam</a>
         </li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        <li><a href="https://www.arcsystemworks.com/game/under-night-in-birth-exelatecl-r/">UnderNight ExeLate</a></li>
       </ul>
     </div>
   </div>
@@ -91,43 +89,12 @@ $usernames = isset($_SESSION['sessionUsernames']) ? $_SESSION['sessionUsernames'
     <label class="miniTitle">Connect with the Community</label>
     <div class="comLinksList">
       <ul>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        <a href="https://steamcommunity.com/app/452510"><img src="images/steam-icon.png" alt="" width="80" /></a>
+        <a href="https://www.reddit.com/r/UnderNightInBirth/" target="_blank"><img src="images/reddit-icon.png" alt="" width="80" /></a>
       </ul>
     </div>
   </div>
-  <!--comment-->
-  <div class="commentTitle">
-      <label class="miniTitle commenttext">Write down a comment</label>
-    </div>
-    <div class="commentsContainer">
-  <?php
-  echo "<form method='post' action='caller.php'>
-    <input type='hidden' name='date' value='" . date('Y-m-d H:i:s') . "'>
-    <textarea class='commentBox' name='comment'></textarea><br>
-    <input type='hidden' name='next_page' value='gamepage-UNIB.php'>
-    <button class='commentBtn' type='submit' name='submitCommentUNIB'>Comment</button>
-</form>";
-  ?>
-  <form id="commentUNIB" method='post' action='caller.php'>
-    <input type='hidden' name='next_page' value='UNIB'>
-    <button class="commentBtn" type="button" onclick="showCommentsUNIB()">Show Comments</button>
-  </form>
-  <?php
-  echo "<div class='CommentSection'>";
-  $array_length = count($usernames);
   
-  for ($index = $array_length - 1; $index >= 0; $index--) {
-    echo "<div class='comment'>";
-    echo "<label class='username'>" . $usernames[$index] . "</label><br>";
-    echo "<span class='date'>" . $dates[$index] . "</span><br>";
-    echo "<p class='comment-text'>" . $comments[$index] . "</p><br><br>";
-    echo "</div>";
-  }
-  echo "</div>";
-  ?>
-  </div>
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/790cbfd452.js" crossorigin="anonymous"></script>
 </body>

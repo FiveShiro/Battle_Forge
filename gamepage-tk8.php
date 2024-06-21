@@ -40,8 +40,8 @@ $usernames = isset($_SESSION['sessionUsernames']) ? $_SESSION['sessionUsernames'
           <li><a href="gamepage-sf6.php">SFVI</a></li>
           <li><a href="gamepage-sf3.php">SFIII</a></li>
           <li><a href="gamepage-GBFRVR.php">GBFVR</a></li>
-          <li><a href="gamepage-kof.html">KOFXV</a></li>
-          <li><a href="gamepage-ggs.html">GGS</a></li>
+          <li><a href="gamepage-kof.php">KOFXV</a></li>
+          <li><a href="gamepage-ggs.php">GGS</a></li>
           <li><a href="gamepage-UNIB.php">UNIB2</a></li>
           <li class="closeOption"><a href="#">Close</a></li>
           <li class="closeOption"><a href="#">Homepage</a></li>
@@ -63,8 +63,8 @@ $usernames = isset($_SESSION['sessionUsernames']) ? $_SESSION['sessionUsernames'
     </div>
   <!--Image banners-->
   <div class="bannerContainer">
-    <div class="bannerWrapper">
-      <img id="tk8logo" src="images/tekken8_logo.jpg.webp" alt="" />
+    <div class="sf6">
+      <img id="tk8logo" src="images/tekken8_logo.png" alt="" width="450" style="margin-top: -2%" />
     </div>
   </div>
   <!--Game's original description, copy paste them from steam-->
@@ -78,9 +78,9 @@ $usernames = isset($_SESSION['sessionUsernames']) ? $_SESSION['sessionUsernames'
     <div class="webLinksList">
       <ul>
         <!--the more the merrier-->
+        <li><a href="https://tekken.com">Tekken Official Website</a></li>
         <li><a href="https://www.tekkenzone.net">Tekkenzone</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        <li><a href="https://tekkenworldtour.com">Tekken World Tour</a></li>
       </ul>
     </div>
   </div>
@@ -89,41 +89,13 @@ $usernames = isset($_SESSION['sessionUsernames']) ? $_SESSION['sessionUsernames'
     <label class="miniTitle">Connect with the Community</label>
     <div class="comLinksList">
       <ul>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        <li><a href="https://www.reddit.com/r/Tekken/">Reddit Tekken</a></li>
+        <li><a href="https://www.facebook.com/groups/tekkenphcommunity/">Tekken PH Facebook Page</a></li>
+        <li><a href="https://steamcommunity.com/app/389730">Tekken Steam Community</a></li>
       </ul>
     </div>
   </div>
-  <!--comment-->
-  <div class="commentTitle">
-      <label class="miniTitle commenttext">Write down a comment</label>
-    </div>
-    <div class="commentsContainer">
-  <?php
-  echo "<form method='post' action='caller.php'>
-    <input type='hidden' name='date' value='" . date('Y-m-d H:i:s') . "'>
-    <textarea class='commentBox' name='comment'></textarea><br>
-    <input type='hidden' name='next_page' value='gamepage-tk8.php'>
-    <button class='commentBtn' type='submit' name='submitCommentTekken8'>Comment</button>
-</form>";
-  ?>
-  <form id="commentTk8" method='post' action='caller.php'>
-    <input type='hidden' name='next_page' value='tk8'>
-    <button class="commentBtn" type="button" onclick="showCommentsTekken8()">Show Comments</button>
-  </form>
-  <?php
-  echo "<div class='CommentSection'>";
-  $array_length = count($usernames);
-
-  for ($index = $array_length - 1; $index >= 0; $index--) {
-    echo $usernames[$index] . "<br>";
-    echo $dates[$index] . "<br>";
-    echo $comments[$index] . "<br><br>";
-  }
-  echo "</div>";
-  ?>
-  </div>
+  
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/790cbfd452.js" crossorigin="anonymous"></script>
 </body>

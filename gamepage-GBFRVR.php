@@ -69,8 +69,7 @@ $usernames = isset($_SESSION['sessionUsernames']) ? $_SESSION['sessionUsernames'
   </div>
   <!--Game's original description, copy paste them from steam-->
   <p class="pGames">
-    Get ready for the next chapter in the legendary fighting game franchise,
-    GranBlue Fantasy Versus Rising.
+    FORGE YOUR GLORY IN THE FLAMES OF BATTLE!
   </p>
   <!--Useful web links-->
   <div class="webLinksContainer">
@@ -79,10 +78,9 @@ $usernames = isset($_SESSION['sessionUsernames']) ? $_SESSION['sessionUsernames'
       <ul>
         <!--the more the merrier-->
         <li>
-          <a href="https://granbluefantasy.jp/en/index.php">GrandBlueFantasyZone</a>
+          <a href="https://granbluefantasy.jp/en/index.php">GranBlueFantasyZone</a>
         </li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        <li><a href="https://store.steampowered.com/app/2157560/Granblue_Fantasy_Versus_Rising/">GranBlue Fantasy Versus : Rising | Steam Free Edition</a></li>
       </ul>
     </div>
   </div>
@@ -91,41 +89,16 @@ $usernames = isset($_SESSION['sessionUsernames']) ? $_SESSION['sessionUsernames'
     <label class="miniTitle">Connect with the Community</label>
     <div class="comLinksList">
       <ul>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        <a href="https://www.reddit.com/r/GranblueFantasyVersus/"><img src="images/reddit-icon.png" alt=""
+            width="80" /></a>
+        <a href="https://steamcommunity.com/app/2157560" target="_blank"><img src="images/steam-icon.png" alt=""
+            width="80" /></a>
+        <a href="https://www.twitch.tv/directory/category/granblue-fantasy-versus-rising" target="_blank"><img
+            src="images/twitch-icon.png" alt="" width="80" /></a>
       </ul>
     </div>
   </div>
-  <!--comment-->
-  <div class="commentTitle">
-      <label class="miniTitle commenttext">Write down a comment</label>
-    </div>
-    <div class="commentsContainer">
-  <?php
-  echo "<form method='post' action='caller.php'>
-    <input type='hidden' name='date' value='" . date('Y-m-d H:i:s') . "'>
-    <textarea class='commentBox' name='comment'></textarea><br>
-    <input type='hidden' name='next_page' value='gamepage-GBFRVR.php'>
-    <button class='commentBtn' type='submit' name='submitCommentGBFRVR'>Comment</button>
-</form>";
-  ?>
-  <form id="commentGBFRVR" method='post' action='caller.php'>
-    <input type='hidden' name='next_page' value='GBFRVR'>
-    <button class="commentBtn" type="button" onclick="showCommentsGBFRVR()">Show Comments</button>
-  </form>
-  <?php
-  echo "<div class='CommentSection'>";
-  $array_length = count($usernames);
-
-  for ($index = $array_length - 1; $index >= 0; $index--) {
-    echo $usernames[$index] . "<br>";
-    echo $dates[$index] . "<br>";
-    echo $comments[$index] . "<br><br>";
-  }
-  echo "</div>";
-  ?>
-  </div>
+  
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/790cbfd452.js" crossorigin="anonymous"></script>
 </body>
