@@ -18,7 +18,7 @@
     <body>
         
         <form id="logoutForm" method="post" action="caller.php">
-            <input type="hidden" name="next_page" value="index.html" />
+            <input type="hidden" name="next_page" value="index.php" />
         </form>
 
         <script src="script.js"></script>
