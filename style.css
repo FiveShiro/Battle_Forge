@@ -212,7 +212,7 @@ i {
 .bannerContainer{
 	margin: auto;
 	background-color: brown;
-	height: 215px;
+	height: 500px;
 	width: auto;
 	background-image: url(images/banner.jpg);
 	background-repeat: no-repeat;
@@ -221,7 +221,7 @@ i {
 }
 .bannerContainerkof{
 	background-color: brown;
-	height: 215px;
+	height: 500px;
 	width: auto;
 	background-image: url(images/KOFXV_Keyart.jpg);
 	background-repeat: no-repeat;
@@ -253,7 +253,7 @@ i {
 }
 .bannerContainersf3{
 	background-color: brown;
-	height: 240px;
+	height: 500px;
 	width: auto;
 	background-image: url(images/sfiiibg.png);
 	background-repeat: no-repeat;
@@ -685,7 +685,7 @@ i {
 /*---------------------Game page GVFRVR------------------*/
 .bannergbContainer{
 	margin: auto;
-	height: 300px;
+	height: 500px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;

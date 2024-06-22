@@ -6,7 +6,7 @@ class DatabaseConnection {
     private $connection;
     private $host = "localhost";
     private $user = "root";
-    private $password = "superwonky_121";
+    private $password = "waterbilling101";
     private $db = "webdev";
 
     private function __construct() {
