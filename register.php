@@ -3,9 +3,9 @@
 if (!function_exists('handleRegister')) {
     function handleRegister($conn)
     {
-        $Username = mysqli_real_escape_string($conn, $_POST['Username']);
-        $Email = mysqli_real_escape_string($conn, $_POST['Email']);
-        $Password = password_hash($_POST['Password'], PASSWORD_DEFAULT);
+        $Username = mysqli_real_escape_string($conn, $_POST['username']);
+        $Email = mysqli_real_escape_string($conn, $_POST['email']);
+        $Password = password_hash($_POST['password'], PASSWORD_DEFAULT);
         $Next_Page = $_POST['next_page'];
 
         $stmt = $conn->prepare("SELECT Password FROM user_tbl WHERE Username = ?");
