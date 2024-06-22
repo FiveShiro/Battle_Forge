@@ -22,7 +22,7 @@
     </video>
     <div class="navcontainer">
       <nav class="nav" id="nav">
-        <a href="index.html"
+        <a href="index.php"
           ><img id="logo" src="images/logo.png" class="logo"
         /></a>
       </nav>

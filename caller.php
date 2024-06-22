@@ -13,7 +13,7 @@ $conn = $dbConnection->getConnection();
 
 // Define page-action mappings
 $pageActions = [
-    'login.html' => 'handleRegister',
+    'main_login.php' => 'handleRegister',
     'homepage.php' => 'handleLogin',
     'gamepage-tk8.php' => 'handleSetCommentsTekken8',
     'tk8' => 'handleGetCommentsTekken8',
@@ -29,7 +29,7 @@ $pageActions = [
     'ggs' => 'handleGetCommentsggs',
     'gamepage-kof.php' => 'handleSetCommentskof',
     'kof' => 'handleGetCommentskof',
-    'index.html' => 'handleLogout'
+    'index.php' => 'handleLogout'
 ];
 
 // Handle GET requests

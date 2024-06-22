@@ -32,7 +32,7 @@ $usernames = isset($_SESSION['sessionUsernames']) ? $_SESSION['sessionUsernames'
 <body>
     <div class="navcontainer">
       <nav class="nav fadeIn" id="nav">
-        <a href="index.html"
+        <a href="homepage.php"
           ><img id="logo" src="images/logo.png" class="logo"
         /></a>
         <ul>

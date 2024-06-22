@@ -26,13 +26,13 @@
         <nav class="nav" id="nav">
           <img id="logo" src="images/logo.png" class="logo" />
           <ul>
-            <li><a href="login.html">Tekken 8</a></li>
-            <li><a href="login.html">SFVI</a></li>
-            <li><a href="login.html">SFIII</a></li>
-            <li><a href="login.html">GBFVR</a></li>
-            <li><a href="login.html">KOFXV</a></li>
-            <li><a href="login.html">GGS</a></li>
-            <li><a href="login.html">UNIB2</a></li>
+            <li><a href="main_login.php">Tekken 8</a></li>
+            <li><a href="main_login.php">SFVI</a></li>
+            <li><a href="main_login.php">SFIII</a></li>
+            <li><a href="main_login.php">GBFVR</a></li>
+            <li><a href="main_login.php">KOFXV</a></li>
+            <li><a href="main_login.php">GGS</a></li>
+            <li><a href="main_login.php">UNIB2</a></li>
             <li class="closeOption"><a href="#">Close</a></li>
           </ul>
           <div class="navMenu">
@@ -58,7 +58,7 @@
     <div class="signinlblContainer">
       <label class="signinLbl"
         >Already have an account?
-        <a href="login.html">
+        <a href="main_login.php">
           <span style="color: #ff005c">Sign in here</span></a
         ></label
       >

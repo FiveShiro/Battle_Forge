@@ -18,7 +18,7 @@ session_start();
   <!--Copy Navigation bar from here-->
   <div class="navcontainer">
       <nav class="nav fadeIn" id="nav">
-        <a href="index.html"
+        <a href="homepage.php"
           ><img id="logo" src="images/logo.png" class="logo"
         /></a>
         <ul>
