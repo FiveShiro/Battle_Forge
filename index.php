@@ -45,9 +45,7 @@
           <h1><span style="color: #ff005c">BATTLE</span>forge</h1>
           <h2>Forging better players</h2>
           <p>
-            BATTLEforge is a community repository website for players searching
-            for sources and links of archives & communities to connect and
-            improve skills with.
+            BATTLEforge is a culmination of information of games from my hobbies built to support me or those who want to usr my site. :P
           </p>
         </div>
       </div>

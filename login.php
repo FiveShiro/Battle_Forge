@@ -28,7 +28,7 @@ if (!function_exists('handleLogin')) {
                 $message1 = "Invalid Password";
                 echo '<script>';
                 echo 'alert("' . $message1 . '");';
-                echo 'window.location.href = "Login.html";'; 
+                echo 'window.location.href = "main_login.php";'; 
                 echo '</script>';
                 exit; 
             }
@@ -36,7 +36,7 @@ if (!function_exists('handleLogin')) {
             $message2 = "Invalid Username";
             echo '<script>';
             echo 'alert("' . $message2 . '");';
-            echo 'window.location.href = "Login.html";';
+            echo 'window.location.href = "main_login.php";';
             echo '</script>';
             exit; 
         }
